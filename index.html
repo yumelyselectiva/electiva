@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA y el Agua | Un Impacto Invisible</title>
+    <meta name="description"
+        content="Explora la relación entre la inteligencia artificial y el consumo masivo de agua dulce para la refrigeración de centros de datos.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+
+    <header>
+        <nav>
+            <div class="logo">AQUA<span>IA</span></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1 class="fade-in">La Sed de la <span>IA</span></h1>
+                <p class="fade-in">Descubre cómo los modelos que impulsan el futuro dependen del recurso más vital de la
+                    Tierra.</p>
+                <div class="scroll-indicator"></div>
+            </div>
+        </section>
+
+        <section class="interactive-info" id="explore">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Explora el Impacto</h2>
+                    <p>Selecciona una categoría para conocer los datos reales y el futuro de nuestra huella hídrica
+                        digital.</p>
+                </div>
+
+                <div class="selection-controls">
+                    <button class="info-btn active" data-target="google">Impacto Google</button>
+                    <button class="info-btn" data-target="microsoft">Iniciativas Microsoft</button>
+                    <button class="info-btn" data-target="global">Escenario Global</button>
+                    <button class="info-btn" data-target="solutions">IA como Solución</button>
+                </div>
+
+                <div class="info-display-container">
+                    <div id="info-content" class="info-card">
+                        <!-- Content will be injected by JS -->
+                        <div class="placeholder-loader"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-overview">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-value">31B</span>
+                    <span class="stat-label">Litros consumidos por Google (2024)</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">765B</span>
+                    <span class="stat-label">Proyección Global IA (2025)</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">0</span>
+                    <span class="stat-label">Agua en nuevos diseños de Microsoft</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AQUAIA. Datos basados en informes de sostenibilidad de Google, Microsoft e investigaciones
+            ambientales.</p>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-container" class="chatbot-container">
+        <div id="chatbot-toggle" class="chatbot-toggle">
+            <span class="chat-icon">💬</span>
+        </div>
+        <div id="chatbot-window" class="chatbot-window hidden">
+            <div class="chatbot-header">
+                <h3>Asistente AquaIA</h3>
+                <button id="close-chat">×</button>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="message bot">¡Hola! Soy AquaIA. ¿En qué puedo ayudarte a entender sobre el consumo de agua
+                    por la IA?</div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="user-input" placeholder="Escribe tu duda...">
+                <button id="send-msg">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
